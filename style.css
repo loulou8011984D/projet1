@@ -68,10 +68,12 @@ h2{
 
 }
 .menus{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: flex-start;
+    color: aliceblue;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .pizzas,.pates,.desserts, {
     color: #FAFF00;
@@ -88,4 +90,66 @@ p{
 }
 .flex-container{
 
+}
+.navbar{
+    background-color: aliceblue;
+    font-style: italic;
+    margin: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.logo{
+    color: black;
+    font-size: 1.5rem;
+}
+.icone {
+    fill: black;
+    cursor: pointer;
+
+}
+.navbar input, .nav-menu, .dropdown{
+    display: none;
+}
+[id^=btn]:checked + ul{
+    display: block;
+}
+.nav-menu{
+    position: absolute;
+    background-color: aliceblue;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+}
+.nav-item a, .drop-item a, .show{
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+    .icone{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: aliceblue;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
 }
