@@ -18,15 +18,48 @@
                 <li class="nav-item"><a href="/cde.html">commande</a></li>
                 <li class="nav-item"><a href="/horaires.html">horaires</a></li>
             </ul> 
-        </nav> 
-     
+        </nav>     
     </header>
-    <div></div>
-    <p>Situé  au 2 rue Sylvain Lagescade à Damville Sur Iton, Venez découvrir une cuisine d'inspiration italienne, dans un cadre chaleureux.</p>  </p>
-    <img src="vitrine.jfif" alt="vitrine pizzeria" class="logo" />
-<p>téléphone : xx.xx.xx.xx.xx</p>
-<img src="assiette.jfif"/>
-<img src="four.jfif"/>
+    <div class="container">
+        <nav class="cde">
+            <a href="#" class="logo">Coding</a>
+            <ul>
+                <li><a href="#">lien 1</a></li>
+                <li><a href="#">lien 2</a></li>
+                <li><a href="#">lien 3</a></li>
+                <li><a href="#">lien 4</a></li>
+                <li>
+                    <button class="btn" id="displayForm">Se connecter</button>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="sec-container">
+                <div class="form-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <div id="forLogin" class="form-header active">Se connecter</div>
+                            <div id="forRegister" class="form-header">S'inscrire</div>
+                        </div>
+                        <div class="card-body" id="formcontainer">
+                            <form id="formLogin">
+                                <input type="text" class="form-control" placeholder="@utilisateur" />
+                                <input type="password" class="form-control" placeholder="@mot de passe" />
+                                <button class="formButton">Connexion</button>                 
+                            </form>
+                            <form id="formRegister" class="toggleForm">
+                                <input type="text" class="form-control" placeholder="@utilisateur" />
+                                <input type="password" class="form-control" placeholder="@mot de passe" />
+                                <input type="password" class="form-control" placeholder="@confirmer mot de passe" />
+                                <button class="formButton">Inscription</button>                 
+                            </form>    
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
