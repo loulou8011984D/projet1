@@ -20,44 +20,39 @@
             </ul> 
         </nav>     
     </header>
-    <div class="container">
-        <nav class="cde">
-            <a href="#" class="logo">Coding</a>
-            <ul>
-                <li><a href="#">lien 1</a></li>
-                <li><a href="#">lien 2</a></li>
-                <li><a href="#">lien 3</a></li>
-                <li><a href="#">lien 4</a></li>
-                <li>
-                    <button class="btn" id="displayForm">Se connecter</button>
-                </li>
-            </ul>
-        </nav>
-        <section>
-            <div class="sec-container">
-                <div class="form-wrapper">
-                    <div class="card">
-                        <div class="card-header">
-                            <div id="forLogin" class="form-header active">Se connecter</div>
-                            <div id="forRegister" class="form-header">S'inscrire</div>
-                        </div>
-                        <div class="card-body" id="formcontainer">
-                            <form id="formLogin">
-                                <input type="text" class="form-control" placeholder="@utilisateur" />
-                                <input type="password" class="form-control" placeholder="@mot de passe" />
-                                <button class="formButton">Connexion</button>                 
-                            </form>
-                            <form id="formRegister" class="toggleForm">
-                                <input type="text" class="form-control" placeholder="@utilisateur" />
-                                <input type="password" class="form-control" placeholder="@mot de passe" />
-                                <input type="password" class="form-control" placeholder="@confirmer mot de passe" />
-                                <button class="formButton">Inscription</button>                 
-                            </form>    
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </section>
+    <div class="contact-wrapper">
+            <form class="form-horizontal" method="post" action="contact.php">
+                <h1 class="section-header">Passez commande !</h1>
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="nom" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" placeholder="0600000000" name="phone">
+                <label for="category">Faites votre choix</label>
+                <select id="category" name="category">
+                    <option value="default">Choisissez vos pizzas</option>
+                    <option value="help">Pizza Numéro 1</option>
+                    <option value="help">Pizza Numéro 2</option>
+                    <option value="help">Pizza Numéro 3</option>
+                    <option value="help">Pizza Numéro 4</option>
+                    <option value="help">Pizza Numéro 5</option>
+                    <option value="help">Pizza Numéro 6</option>
+                    <option value="help">Pizza Numéro 7</option>
+                    <option value="help">Pizza Numéro 8</option>
+                    <option value="help">Pizza Numéro 9</option>
+                </select>
+                <label for="message">Message</label>                <textarea rows="10" id="message" name="message" required></textarea>
+                <button class="send-button" id="submit" type="submit">Envoyer</button>
+                <div class="advert-wrapper">
+                    <p>Souhaitez-vous recevoir nos news ?</p>
+                    <input type="radio" id="yes" name="news-question" value="yes" checked>
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="no" name="news-question" value="no">
+                    <label for="no">Non</label>
+                </div>        
+            </form>
+    </div>
 
     
     <script src="script.js"></script>
