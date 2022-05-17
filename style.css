@@ -118,9 +118,11 @@ p{
     font-family: 'Khula', sans-serif;
 }
 .check{
-    border: solid 1px black;
+    background-color:aliceblue;
+    border: solid 3px white;
     width: 10%;
-    padding: 0.5em;
+    padding: 15em;
+    margin-left: 2rem;
 } 
 
 button{
@@ -142,7 +144,7 @@ form {
     box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
     border-radius: 20px;
     margin-bottom: 2rem;
-        }
+}
         .contact-wrapper {
     display: flex;
     flex-direction: column;

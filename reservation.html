@@ -20,53 +20,40 @@
             </ul> 
         </nav>
     </header>
-    <h2>Effectuez vos réservations en ligne</h2>
+    <h2>Effectuez votre réservation en ligne</h2>
         <div class="container">
             <form action="">
                 <div class="check">
-                    <div>Date d'arrivée : <br/>
+                    <div>Date souhaitée : <br/>
                 <input type="date" id="in"/>
-                </div> 
-                <div>Date de départ : <br />
-                <input type="date" id="out" />
-                </div> 
                 </div>  <br />
-            <div class="nbC"><fieldset><legend>Nombre de chambres</legend><datalist id="browsers">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                </datalist> <input list="browsers" name="browser" size="20">
+            <div class="nbC">
+                <fieldset>
+                    <legend>Heure souhaitée</legend>
+                    <datalist id="browsers">
+                        <option value="19h00"></option>
+                        <option value="19h30"></option>
+                        <option value="20h00"></option>
+                        <option value="20h30"></option>
+                        <option value="21h00"></option>
+                    </datalist>
+                    <input list="browsers" name="browser" size="20">
                 </fieldset>
             </div>
-            <div class="nbP"><fieldset><legend>Nombre de personnes</legend>Adultes :<input list="browsers" name="browser" size="20">
-            <datalist id="browsers">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>Enfants :<input list="browsers" name="browser" size="20">
-            <datalist id="browsers">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-                </fieldset></div>
-              <br />
-              <input type="submit" value="Valider" id="valid" />
-             
-            </form>  
-             
-          </div>
-
-
-
-
-
+            <div class="nbP">
+                <fieldset>
+                    <legend>Nombre de personnes</legend>
+                    <datalist id="browserstoto">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                    </datalist><input list="browserstoto" name="browserstoto" size="20">
+                </fieldset>
+            </div>
+                <input type="submit" value="Valider" id="valid" />
+            </form> 
     <script src="script.js"></script>
 </body>
 </html>
