@@ -21,7 +21,7 @@
         </nav>     
     </header>
     <div class="contact-wrapper">
-            <form class="form-horizontal" method="post" action="contact.php">
+            <form class="form-horizontal">
                 <h1 class="section-header">Passez commande !</h1>
                 <label for="name">Nom</label>
                 <input type="text" id="name" placeholder="nom" name="name" required>
@@ -42,16 +42,40 @@
                     <option value="help">Pizza Numéro 8</option>
                     <option value="help">Pizza Numéro 9</option>
                 </select>
-                <label for="message">Message</label>                <textarea rows="10" id="message" name="message" required></textarea>
+                <label for="category">Faites votre choix</label>
+                <select id="category2" name="category2">
+                    <option value="default">Choisissez vos pizzas</option>
+                    <option value="help">Pizza Numéro 1</option>
+                    <option value="help">Pizza Numéro 2</option>
+                    <option value="help">Pizza Numéro 3</option>
+                    <option value="help">Pizza Numéro 4</option>
+                    <option value="help">Pizza Numéro 5</option>
+                    <option value="help">Pizza Numéro 6</option>
+                    <option value="help">Pizza Numéro 7</option>
+                    <option value="help">Pizza Numéro 8</option>
+                    <option value="help">Pizza Numéro 9</option>
+                </select>
+                <label for="category">Faites votre choix</label>
+                <select id="category3" name="category3">
+                    <option value="default">Choisissez vos pizzas</option>
+                    <option value="help">Pizza Numéro 1</option>
+                    <option value="help">Pizza Numéro 2</option>
+                    <option value="help">Pizza Numéro 3</option>
+                    <option value="help">Pizza Numéro 4</option>
+                    <option value="help">Pizza Numéro 5</option>
+                    <option value="help">Pizza Numéro 6</option>
+                    <option value="help">Pizza Numéro 7</option>
+                    <option value="help">Pizza Numéro 8</option>
+                    <option value="help">Pizza Numéro 9</option>
+                </select>
+                <label for="message">Message</label>               
+                <textarea rows="10" id="message" name="message" required></textarea>
                 <button class="send-button" id="submit" type="submit">Envoyer</button>
-                <div class="advert-wrapper">
-                    <p>Souhaitez-vous recevoir nos news ?</p>
-                    <input type="radio" id="yes" name="news-question" value="yes" checked>
-                    <label for="yes">Oui</label>
-                    <input type="radio" id="no" name="news-question" value="no">
-                    <label for="no">Non</label>
-                </div>        
             </form>
+
+    </div>
+    <div class="container-notification">
+        <!--emplacement notif-->
     </div>
 
     

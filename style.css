@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700');
+
 * {
     margin: 0;
     padding: 0;
@@ -53,9 +55,12 @@ line-height: 77px;
 letter-spacing: 0em;
 text-align: center;
 }
+
 h2{
     font-size: 3rem;
+    color: #FAFF00;
 }
+
 img{
     margin: auto;
 }
@@ -65,13 +70,18 @@ img{
     width: 50%;
 
 }
+.presentation{
+    display: flex;
+
+}
+.flex-container{
+    text-align: center;
+}
+
 #menu {
     text-align: center;
 }
 
-h2{
-    color: #FAFF00;
-}
 .menus{
     color: aliceblue;
     font-style: italic;
@@ -80,11 +90,11 @@ h2{
     justify-content: space-around;
     align-items: flex-start;
 }
-.pizzas,.pates,.desserts, {
-    color: #FAFF00;
+.pizzas,.pates,.desserts {
+    color:aliceblue;
     font-style: italic;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .pizzas li, .pates li, .desserts li {
@@ -101,36 +111,50 @@ p{
 
 .heures{
     display: block;
-    background-color:aliceblue;
+    background-color:rgba(171,171,171,1);
     font-style: italic;
-    margin: 100px;
-    padding: 5px;
+    margin: 80px;
+    padding: 10px;
     align-items: center;
-    font-size: 1.5rem;
-    -webkit-border-radius: 20px;
+    font-size: 1.2rem;
+    -webkit-border-radius: 30px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    text-align: center;
+    line-height: 1.5;
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Khula:400,700');
 .container{
-    font-family: 'Khula', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.check{
-    background-color:aliceblue;
-    border: solid 3px white;
-    width: 10%;
-    padding: 15em;
-    margin-left: 2rem;
-} 
+.tables-terrasse{
+    width: 70%;
+    border-radius: 20px;
+}
 
 button{
     background-color: white;
 }
-.nbC, .nbP{
-    width: 10%;
+.notif{
+    height: 30px;
+    background-color:aliceblue;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    line-height: 30px;
 }
+.container-notification{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -139,13 +163,19 @@ form {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
-    -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
-    box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
     border-radius: 20px;
     margin-bottom: 2rem;
 }
-        .contact-wrapper {
+
+.order-form {
+    align-items: center;
+    background-color:#bfccc5;
+    border: solid 3px white;
+    width: 70%;
+    margin: 20px;
+}
+
+.contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,9 +183,13 @@ form {
 }
 input, textarea, select {
     margin-bottom: 1rem;
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 0.3rem;
     border: solid 1px;
+}
+
+.btn-submit {
+    margin-bottom: 0;
 }
 textarea {
     max-width: 400px;
@@ -163,12 +197,10 @@ textarea {
 }
 input:focus, textarea:focus, select:focus, button:focus {
     outline: none;
-    -webkit-box-shadow: 0px 0px 11px -7px #bac4bf;
-    -moz-box-shadow: 0px 0px 11px -7px #bac4bf;
     box-shadow: 0px 0px 11px -7px #bac4bf;
     border: solid 1px #d5e1db;
 }
-        label {
+label {
     margin-bottom: 0.5rem;
 }
 .section-header {
@@ -188,7 +220,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 400px;
+    width: 350px;
     background-color: #d5e1db;
     border: none;
     border-radius: 7px;
@@ -205,3 +237,4 @@ input:focus, textarea:focus, select:focus, button:focus {
     font-size: 0.8rem;
     margin-top: 2rem;
 }
+
